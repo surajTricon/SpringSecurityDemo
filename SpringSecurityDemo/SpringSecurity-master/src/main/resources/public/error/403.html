@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>403 Forbidden</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 6rem;
+            color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+            text-align: center;
+            max-width: 600px;
+        }
+        .error-container {
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        a {
+            text-decoration: none;
+            background-color: #ff6b6b;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #ff5252;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animation {
+            font-size: 4rem;
+            color: #ff6b6b;
+            margin-bottom: 30px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="error-container">
+    <div class="animation">🚫</div>
+    <h1>403</h1>
+    <h2>Forbidden</h2>
+    <p>Sorry, you don’t have permission to access this page. <br> Please contact the administrator or try going back to the homepage.</p>
+    <a href="/">Go to Homepage</a>
+</div>
+</body>
+</html>

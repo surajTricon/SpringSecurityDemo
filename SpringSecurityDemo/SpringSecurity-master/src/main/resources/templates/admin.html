@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .admin-panel {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .admin-options {
+            list-style: none;
+            padding: 0;
+        }
+
+        .admin-options li {
+            margin: 15px 0;
+        }
+
+        .admin-options a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .admin-options a:hover {
+            background-color: #218838;
+        }
+
+        .back-home {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="admin-panel">
+    <h2>Admin Panel</h2>
+    <ul class="admin-options">
+        <li><a href="manage-users.html">Manage Users</a></li>
+        <li><a href="view-reports.html">View Reports</a></li>
+        <li><a href="settings.html">Settings</a></li>
+    </ul>
+    <a href="home.html" class="back-home">Back to Home</a>
+</div>
+
+</body>
+</html>
